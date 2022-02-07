@@ -24,7 +24,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="countdown"
-  document.getElementById("countdown2").innerHTML = "time before we get to Paris : <b>" + days + "j " + hours + "h</b> "
+  document.getElementById("countdown2").innerHTML = "time before Paris : <b>" + days + "j " + hours + "h</b> "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
@@ -36,7 +36,7 @@ var x = setInterval(function() {
 </script>
 
 
-<p id="countdown2"></p>
+<p id="countdown3"></p>
 
 <script>
 // Set the date we're counting down to
@@ -58,13 +58,13 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="countdown"
-  document.getElementById("countdown2").innerHTML = "time before D2's DLC : <b>" + days + "j " + hours + "h</b> "
+  document.getElementById("countdown3").innerHTML = "time before D2's DLC : <b>" + days + "j " + hours + "h</b> "
   + minutes + "m " + seconds + "s ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown2").innerHTML = "EXPIRED";
+    document.getElementById("countdown3").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>
