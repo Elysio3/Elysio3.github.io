@@ -1,16 +1,20 @@
 <!-- Display the countdown timer in an element -->
 
 countdowns : 
-<p id="champ1"></p>
+<h1><p id="champ1"></p></h1>
+<h2><p id="champ2"></p></h2>
+<br>
 <p id="champ3"></p>
 
 
 <script>
 // Set the date we're counting down to
 var DateGoal1 = new Date("Mar 11, 2022 18:30:00").getTime();
+var DateGoal2 = new Date("Mar 4, 2022 20:20:00").getTime();
 var DateGoal3 = new Date("Apr 17, 2022 9:00:00").getTime();
 
 var x = setInterval(updateDate(DateGoal1, "champ1", "Time before Paris"), 1000);
+var x1 = setInterval(updateDate(DateGoal2, "champ2", "Time before we see each others again :)"), 1000);
 var x2 = setInterval(updateDate(DateGoal3, "champ3", "Time before a suprise"), 1000);
 
 
