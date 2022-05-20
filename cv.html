@@ -1,0 +1,824 @@
+<html lang="en">
+<head>
+    <title>Maël KERVICHE Portfolio - Accueil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+
+    <link href='/portfolio/foundation/foundation.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/portfolio/foundation/foundation.css">
+    <link rel="stylesheet" href="/portfolio/foundation/foundation.min.js">
+    <link rel="stylesheet" href="/portfolio/foundation/foundation.min.css">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.js">
+
+    <script type='text/javascript' src='/portfolio/js/jquery.particleground.js'></script>
+    <script type='text/javascript' src='/portfolio/js/demo.js'></script>
+    <script type='text/javascript' src='/portfolio/js/jquery-1.11.1.min.js'></script>
+
+    <link rel="stylesheet" href="/portfolio/css/styles.css">
+    <link rel="stylesheet" href="/portfolio/css/normalize.css">
+
+</head>
+<body>
+
+
+
+
+
+<!-- Start of top bar -->
+<div class="top-bar" style="position: fixed; width: 100%; z-index: 5">
+    <div class="top-bar-left text-left">
+        <img style="height:75px; width: auto" src="/portfolio/images/profile.jpg">
+    </div>
+
+    <div class="top-bar-title">
+        <ul class="menu-text">
+            Maël KERVICHE - Portfolio
+        </ul>
+    </div>
+
+    <style> a { color: black; }</style>
+
+    <div class="top-bar-right text-left" >
+        <ul class="dropdown menu button-group" data-dropdown-menu style="padding-right: 75px">
+            <li><a href="/portfolio/index.html">Accueil</a></li>
+
+            <li class="active"><a href="/portfolio/cv.html">Mon Parcours</a></li>
+
+            <li>
+                <a href="/portfolio/projets/index.html" onclick="location.href='/portfolio/projets/index.html';">Mes Projets</a>
+                <ul class="menu">
+                    <li><a href="/portfolio/projets/index.html#bts" onclick="location.href='/portfolio/projets/index.html#bts';">BTS SIO</a></li>
+                    <li><a href="/portfolio/projets/index.html#csi" onclick="location.href='/portfolio/projets/index.html#csi';">Bachelor CSI</a></li>
+                    <li><a href="/portfolio/projets/index.html#alternance" onclick="location.href='/portfolio/projets/index.html#alternance';">Alternance(s)</a></li>
+                    <li><a href="/portfolio/projets/index.html#stage" onclick="location.href='/portfolio/projets/index.html#stage';">Stage(s)</a></li>
+
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="//portfolio/veille/index.html" onclick="location.href='/portfolio/veille/index.html';">Veille technologique</a>
+                <ul class="menu">
+                    <li><a href="/portfolio/veille/php.html#bts">(BTS) PHP)</a></li>
+                    <li><a href="/portfolio/veille/php.html#csi">(CSI) PHP</a></li>
+                    <li><a href="/portfolio/veille/sgbd.html">(CSI) SGBD</a></li>
+                    <li><a href="/portfolio/veille/apache.html">(CSI) Apache</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/portfolio/contact.html">Contact</a></li>
+
+        </ul>
+
+
+
+    </div>
+</div>
+<!-- End of top bar -->
+
+
+<div class="row" id="particles">
+    <div class="text-center" id="intro">
+        <h1>Mon Parcours</h1>
+    </div>
+</div>
+
+<!-- TODO ajouter les liens vers les pages infos pour stage, projets, etc ? -->
+<script>
+    function AlternanceJlogiciels() {
+        document.getElementById("result").innerHTML = "<h3>Alternance</h3>\n" +
+            "                            <h5><i>JLogiciels</i></h5>" +
+            "<p>\n" +
+            "                                JLogiciels et une société d'édition et de création de logiciels de : Gestion, Facturation, Caisse, ERP, CRM.\n" +
+            "                            <br>\n" +
+            "                            Basée sur Colomiers, la société compte à ce jour une dizaine d'employés internes et quelques commerciaux nationaux.\n" +
+            "                            JLogiciels est une entreprise d'édition de logiciels SaaS (Software as a service) cloud, disponible et accessible depuis son\n" +
+            "                            navigateur. Le logiciel propose une multitude de modules (vente, caisse, parc métré, ...) tous personnalisables aux besoins du client.\n" +
+            "\n" +
+            "                            <hr>\n" +
+            "\n" +
+            "                            <h5><u>Misions réalisées en entreprise :</u></h5>\n" +
+            "\n" +
+            "                            <ul>\n" +
+            "                                <li><b>Conception de logiciels</b></li>\n" +
+            "                                Conception de logiciels \"types\" basé sur in langage de programmation propre à l'entreprise. Le langage permet le développement\n" +
+            "                                rapide d'une application avec la possibilité de personnaliser cette dernière selon les besoins / envies du client.\n" +
+            "\n" +
+            "                                <li><b>Personnalisations de logiciels</b></li>\n" +
+            "                                Personnalisation de logiciels : ajout de tables, de fonctionnnalités, de modules en PHP / Javascript. Les personnalisations\n" +
+            "                                permettent aux clients qui le souhaitent d'ajouter de nouvelles fonctionnalités sur leurs logiciel afin qu'il remplissent au mieux leurs attentes\n" +
+            "                                dans leurs utilisation  quotidienne.\n" +
+            "\n" +
+            "                                <li><b>Creation / Modifications de documents modèles</b></li>\n" +
+            "                                Le logiciel permet l'impression de documents PDF à partir de modèles de base ou personnalisés (logo, mention complémentaires, ...) Un document modèle est\n" +
+            "                                modifié lorsqu'un client change de logo ou souhaites changer la structure du fichier pour répondre à ses attentes lors des impressions. Un document modèle est\n" +
+            "                                modifié aussi lorsqu'une personnalisation impacte les données imprimées.\n" +
+            "\n" +
+            "                                <li><b>Ajout / Modifications de CGV</b></li>\n" +
+            "                                Ajout de Conditions Générales de Vente ou modification de celles présente sur le logiciel d'un client. Les CGV sont imprimées automatiquement en bas de page\n" +
+            "                                lors de l'impression PDF.\n" +
+            "\n" +
+            "                                <li><b>Ajout / Modifications de Signatures de mails</b></li>\n" +
+            "                                Ajout ou modification de la signature des mails envoyés depuis le logiciel (fonctionnalités interne permettant l'envoi direct de fichier)\n" +
+            "\n" +
+            "                                <li><b>Développement de logiciels tierces</b></li>\n" +
+            "                                Projet principal de l'alternance : création d'un espace sécurisé permettant l'affichage d'un ensemble de données (factures, devis, ...)\n" +
+            "                                accessible pour les clients de nos clients (lors de la création d'une facture par l'un de nos client concernant une tierce personne) permettant\n" +
+            "                                la consultation ou le paiement de ces documents.\n" +
+            "\n" +
+            "                                <li><b>Service après-vente</b></li>\n" +
+            "                                Assurance du service après-vente : intervention sur des erreurs de manipulation du client, démonstration sur les\n" +
+            "                                nouvelles fonctionnalités\n" +
+            "\n" +
+            "                                <li><b>Maintenance Informatique et logicielle</b></li>\n" +
+            "                                Intervention sur d'éventuels problèmes logiciels, bugs.\n" +
+            "\n" +
+            "                                <li><b>Participations à la vie de l'entreprise</b></li>\n" +
+            "                                Réunions hebdomadaires internes, réunions avec le client, rédaction de cahiers des charges.\n" +
+            "                            </ul>\n" +
+            "\n" +
+            "                            <h5><u>Compétences Acquises :</u></h5>\n" +
+            "\n" +
+            "                            <table class='table hover'>\n" +
+            "                                <thead>\n" +
+            "                                <td>Domaine</td>\n" +
+            "                                <td>Compétences acquises</td>\n" +
+            "                                </thead>\n" +
+            "                                <tr>\n" +
+            "                                    <td>Gestion de Projet</td>\n" +
+            "                                    <td>\n" +
+            "                                        <ul>\n" +
+            "                                            <li>Rédaction d'un cahier des charges</li>\n" +
+            "                                            <li>Préparation de réunions</li>\n" +
+            "                                            <li>Communication Interne / externe à l'entreprise</li>\n" +
+            "                                            <li>Suivi de chartes graphiques</li>\n" +
+            "                                            <li></li>\n" +
+            "                                        </ul>\n" +
+            "                                    </td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <td>Développement JLogiciels</td>\n" +
+            "                                    <td>\n" +
+            "                                        <ul>\n" +
+            "                                            <li>Création de logiciels</li>\n" +
+            "                                            <li>Création de documents modèles</li>\n" +
+            "                                            <li>Ajout de CGV, Signatures de mails</li>\n" +
+            "                                            <li>Modification de personnalisations</li>\n" +
+            "                                            <li>Gestion des erreurs, bugs</li>\n" +
+            "                                        </ul>\n" +
+            "                                    </td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <td>Développement (Général)</td>\n" +
+            "                                    <td>\n" +
+            "                                        <ul>\n" +
+            "                                            <li>Création d'un environnement de développement</li>\n" +
+            "                                            <li>Self-learning sur les langages JQuery AJAX</li>\n" +
+            "                                            <li>Conception d'un cahier des charges</li>\n" +
+            "                                            <li>Conception d'une maquette</li>\n" +
+            "                                            <li>Conception d'un diagramme de classes</li>\n" +
+            "                                            <li>Développement d'une application Web</li>\n" +
+            "                                            <li>Gestion des erreurs</li>\n" +
+            "                                            <li>Veille sur les méthodes de sécurisation web</li>\n" +
+            "                                        </ul>\n" +
+            "                                    </td>\n" +
+            "                                </tr>\n" +
+            "                                <tr>\n" +
+            "                                    <td>Service après-vente</td>\n" +
+            "                                    <td>\n" +
+            "                                        <ul>\n" +
+            "                                            <li>Démonstration à distance des nouvelles fonctionnalités du logiciel</li>\n" +
+            "                                        </ul>\n" +
+            "                                    </td>\n" +
+            "                                </tr>\n" +
+            "\n" +
+            "                            </table>\n";
+    }
+    function CSI() {
+        document.getElementById("result").innerHTML = "<h3>Bachelor CSI</h3>\n" +
+            "                            <h5><i>Concepteur de Systèmes d'Informations</i></h5>\n" +
+            "\n" +
+            "                            <p>\n" +
+            "                                Formation en alternance à l'ORT de Colomiers, le Bachelor CSI est une carrière d'étude mettant en avant les compétences\n" +
+            "                                principales de l'informaticien, qu'ils soit voué à être administrateur réseau ou développeur. Le point fort de cette formation\n" +
+            "                                se trouve dans l'alternance : une initiative d'acquisition d'expérience professionnelle et un début d'insertion dans le monde\n" +
+            "                                du travail.\n" +
+            "                                <br><br>\n" +
+            "                            La formation propose différents modules permettant d'apprendre les bases ou d'approfondir nos connaissances, renforcer nos acquis\n" +
+            "                            et développer un esprit de gestion de projet de développement au moyen de TPs et de la création de projet d'applications réalisés en groupe.\n" +
+            "\n" +
+            "                            <hr><table class=\"table hover\">\n" +
+            "                                <thead>\n" +
+            "                                    <td>Module</td>\n" +
+            "                                    <td>Description</td>\n" +
+            "                                </thead>\n" +
+            "                                <tbody>\n" +
+            "                                    <thead style=\"color: #0c4d78\">\n" +
+            "                                        <td colspan=\"2\">Développement :</td>\n" +
+            "                                    </thead>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>UML</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Gestion du code source</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Base de données - Requêtes</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Base de données - Administration</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Développement Web</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Administration hébergement Web</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Architecture d'application</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Dev back-end : NodeJS</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Dev front-end : Angular/Ionic</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Dev back-end : Symfony</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "\n" +
+            "\n" +
+            "                                    <thead style=\"color: #0c4d78\">\n" +
+            "                                        <td colspan=\"2\">Réseau :</td>\n" +
+            "                                    </thead>\n" +
+            "\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Réseau Local</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Gestion Poste Client</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Gestion du SI</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Sécurité informatique</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "\n" +
+            "\n" +
+            "                                    <thead style=\"color: #0c4d78\">\n" +
+            "                                        <td colspan=\"2\">Gestion de projet :</td>\n" +
+            "                                    </thead>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Conduite de projet</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Element de gestion</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "\n" +
+            "                                    <thead style=\"color: #0c4d78\">\n" +
+            "                                        <td colspan=\"2\">Général :</td>\n" +
+            "                                    </thead>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Anglais</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Communication</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Droit Informatique</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "                                    <tr>\n" +
+            "                                        <td>Veille technologique</td>\n" +
+            "                                        <td></td>\n" +
+            "                                    </tr>\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "\n" +
+            "                                </tbody>\n" +
+            "                            </table>\n" +
+            "                            </p>";
+    }
+    function BTSSIOStage() {
+        document.getElementById("result").innerHTML = "<h3>Stage en Entreprise</h3>\n" +
+            "                            <h5><i>Cédric Payet Broderie</i></h5>\n" +
+            "\n" +
+            "                            <p>\n" +
+            "                                Lors de ma seconde année de BTS SIO option SLAM, un stage en entreprise d'une durée de deux mois. Lors de ce stage, un cahier des charges\n" +
+            "                                est rédigés et un projet mis en production.\n" +
+            "\n" +
+            "                                Lors de mon stage en entreprise, le projet définit consistait en la révision du système de commande (boutique) accessible sur le site internet\n" +
+            "                                de l'entreprise ainsi que la refonte graphique et l'ajout de nouvelles fonctionnalités définies sur un panneau d'affichage sécurisé par mot de passe.\n" +
+            "\n" +
+            "                                <hr>\n" +
+            "                                Le projet met en oeuvre des compétences front-end (graphismes, interface utilisateur) et back-end (fonctionnalités PHP, algorithmes) afin de proposer une\n" +
+            "                                solution sécurisée et complète.\n" +
+            "                                <hr>\n" +
+            "                                <table>\n" +
+            "                                    <thead>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Missions</td>\n" +
+            "                                            <td>Description</td>\n" +
+            "                                        </tr>\n" +
+            "                                    </thead>\n" +
+            "                                    <tbody>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Refonte graphique</td>\n" +
+            "                                            <td>\n" +
+            "                                                Refonte graphique de l'ensemble du site, changement du style, des menus, ajout de nouveaux onglets\n" +
+            "                                                en concordance avec l'ajout de nouvelles fonctionnalités.\n" +
+            "                                            </td>\n" +
+            "                                        </tr>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Création d'un espace administrateur</td>\n" +
+            "                                            <td>\n" +
+            "                                                Création d'un espace administrateur sécurisé permettant l'ajout dans la boutique de nouveaux produits\n" +
+            "                                                et fournisseurs depuis un formulaire simplifié. Permet aussi le changement du produit mis en avant, ajout d'articles de blog.\n" +
+            "                                            </td>\n" +
+            "                                        </tr>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Révision de la boutique</td>\n" +
+            "                                            <td>Changement du système de commande en ligne, de devis personnalisés et d'envoi de mails de confirmation des commandes.</td>\n" +
+            "                                        </tr>\n" +
+            "\n" +
+            "                                    </tbody>\n" +
+            "                                </table>\n" +
+            "                            </p>";
+    }
+    function BTSSIO() {
+        document.getElementById("result").innerHTML = "<h3>Brevet de technicien supérieur</h3>\n" +
+            "                            <h5><i>Service informatique aux organisations</i></h5>\n" +
+            "\n" +
+            "                            <p>\n" +
+            "                                Formation de deux ans au lycée Général & technologique Henri-Matisse à Cugnaux, cette formation BAC+2 est la source du\n" +
+            "                                développement de mes compétences en informatique et gestion de projet. Durant deux années, nous avons appris les langages de programmation,\n" +
+            "                                les méthodes de travail, les langages de base de données, la gestion de projet afin de permettre, une fois le diplôme obtenu, à chacun\n" +
+            "                                de s'insérer facilement sur le marché du travail ou dans les études supérieures.\n" +
+            "\n" +
+            "                                <table>\n" +
+            "                                    <thead>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Matière</td>\n" +
+            "                                            <td>Description</td>\n" +
+            "                                        </tr>\n" +
+            "                                    </thead>\n" +
+            "                                    <tbody>\n" +
+            "                                        <thead style=\"color: #0c4d78\">\n" +
+            "                                            <tr>\n" +
+            "                                                <td colspan=\"2\">SLAM</td>\n" +
+            "                                            </tr>\n" +
+            "                                        </thead>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Gestion de projet</td>\n" +
+            "                                            <td></td>\n" +
+            "                                        </tr>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Base de données</td>\n" +
+            "                                            <td></td>\n" +
+            "                                        </tr>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Développement Web</td>\n" +
+            "                                            <td></td>\n" +
+            "                                        </tr>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Développement Objet</td>\n" +
+            "                                            <td></td>\n" +
+            "                                        </tr>\n" +
+            "\n" +
+            "                                        <thead style=\"color: #0c4d78\">\n" +
+            "                                            <tr>\n" +
+            "                                                <td colspan=\"2\">SISR</td>\n" +
+            "                                            </tr>\n" +
+            "                                        </thead>\n" +
+            "\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Réseau</td>\n" +
+            "                                            <td></td>\n" +
+            "                                        </tr>\n" +
+            "\n" +
+            "                                        <thead style=\"color: #0c4d78\">\n" +
+            "                                            <tr>\n" +
+            "                                                <td colspan=\"2\">Général</td>\n" +
+            "                                            </tr>\n" +
+            "                                        </thead>\n" +
+            "\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Mathématiques</td>\n" +
+            "                                            <td></td>\n" +
+            "                                        </tr>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Anglais</td>\n" +
+            "                                            <td></td>\n" +
+            "                                        </tr>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Economie, droit et gestion</td>\n" +
+            "                                            <td></td>\n" +
+            "                                        </tr>\n" +
+            "                                        <tr>\n" +
+            "                                            <td>Culture générale</td>\n" +
+            "                                            <td></td>\n" +
+            "                                        </tr>\n" +
+            "                                    </tbody>\n" +
+            "                                </table>\n" +
+            "                            </p>";
+    }
+    /*function Terminale() {
+        document.getElementById("result").innerHTML = "Terminale générale scientifique";
+    }
+    function Premiere() {
+        document.getElementById("result").innerHTML = "Première generale scientifique";
+    }
+    function Seconde() {
+        document.getElementById("result").innerHTML = "Seconde generale";
+    }
+    function TroisiemeStage() {
+        document.getElementById("result").innerHTML = "Stage d'observation";
+    }
+
+     */
+
+</script>
+
+
+
+
+<div class="row" id="content">
+    <div class="grid-container">
+
+        <div class="grid-x">
+            <div class="medium-12 columns">
+                <div class="row">
+
+                    <div class="grid-x">
+                        <div class="medium-6 columns text-left">
+                            <div id="result"><i>cliquez sur un élément de la prise chronologique pour en afficher le contenu</i></div>
+
+                            <!-- -------------------------------------------------- -->
+
+                            <!-- -------------------------------------------------- -->
+
+                            <link href='//fonts.googleapis.com/css?family=Roboto:200,400,600' rel='stylesheet' type='text/css'>
+
+                        </div>
+
+                        <!-- start of timeline -->
+                        <div class="medium-6 columns text-left">
+                            <div class="history-tl-container">
+                                <ul class="tabs tl" style="border: 0px" data-tabs id="example-tabs">
+
+                                    <li class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2022<br></div>
+                                        <div class="item-title"></div>
+                                        <div class="item-detail"></div>
+
+                                    </li>
+
+                                    <li onclick="AlternanceJlogiciels()" class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp"></div>
+                                        <div class="item-title">
+                                            <a onclick="AlternanceJlogiciels()" aria-selected="true">Alternance</a>
+                                        </div>
+                                        <div class="item-detail">JLogiciels</div>
+
+                                    </li>
+
+                                    <li onclick="CSI()" class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2021</div>
+                                        <div class="item-title">
+                                            <a onclick="CSI()" aria-selected="true">Bachelor CSI</a>
+                                        </div>
+                                        <div class="item-detail">Centre de formation ORT Colomiers</div>
+
+                                    </li>
+
+                                    <li onclick="BTSSIOStage()" class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp"></div>
+                                        <div class="item-title"><a onclick="BTSSIOStage()">Stage en Entreprise</a></div>
+                                        <div class="item-detail">Cédric Payet Broderie</div>
+
+                                    </li>
+
+                                    <li class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2020</div>
+                                        <div class="item-title"><br<br></div>
+                                        <div class="item-detail"></div>
+
+                                    </li>
+
+                                    <li onclick="BTSSIO()" class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2019</div>
+                                        <div class="item-title"><a onclick="BTSSIO()">BTS SIO</a></div>
+                                        <div class="item-detail">Lycée Général et technologique Henri-Matisse</div>
+                                    </li>
+
+                                    <li onclick="Terminale()" class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2019</div>
+                                        <div class="item-title"><a onclick="Terminale()">Terminale Scientifique</a></div>
+                                        <div class="item-detail">Lycée Général et Technologique Clémence Royer</div>
+                                        <div class="item-detail"><i>Spécialité : SVT & ICN</i></div>
+                                    </li>
+
+                                    <li onclick="Premiere()" class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2018</div>
+                                        <div class="item-title"><a onclick="Premiere()">Première Scientifique</a></div>
+                                        <div class="item-detail">Lycée Général et Technologique Clémence Royer</div>
+                                        <div class="item-detail"><i>Spécialité : SVT</i></div>
+                                    </li>
+
+                                    <li onclick="Seconde()" class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2017</div>
+                                        <div class="item-title"><a onclick="Seconde()">Seconde Générale</a></div>
+                                        <div class="item-detail">Lycée Général et Technologique Clémence Royer</div>
+                                        <div class="item-detail"><i>Enseignement d'exploration : ISN</i></div>
+                                    </li>
+
+                                    <li onclick="TroisiemeStage()" class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2016</div>
+                                        <div class="item-title"><a onclick="TroisiemeStage()">Stage</a></div>
+                                        <div class="item-detail">Sopra Steria Colomiers</div>
+                                    </li>
+
+                                    <li class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2015</div>
+                                        <div class="item-title"></div>
+                                        <div class="item-detail"></div>
+                                    </li>
+
+                                    <li class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2014</div>
+                                        <div class="item-title"></div>
+                                        <div class="item-detail"></div>
+                                    </li>
+
+                                    <li class="tl-item" ng-repeat="item in retailer_history">
+                                        <div class="timestamp">2013</div>
+                                        <div class="item-title"></div>
+                                        <div class="item-detail"></div>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="medium-6 text-right column">
+                        <output id="cards"><github-card user="Elysio3"></github-card></output>
+                    </div>
+                    <div class=" medium-6 text-left column">
+                        <div class="badge-base LI-profile-badge text-right" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="maël-kerviche-57ab76202" data-version="v1">
+                            <a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/ma%C3%ABl-kerviche-57ab76202?trk=profile-badge" target="_blank"><br><br></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+<footer>
+    <div class="medium-text-right" style="padding-right: 15px">
+        <p>
+            Copyright © <script>document.write(new Date().getFullYear());</script> All rights reserved | Website by Maël KERVICHE</a>
+        </p>
+    </div>
+</footer>
+
+<template id="github-template">
+    <style>
+        :host {
+            display: inline-block;
+        }
+
+        .user {
+            font-family: "Helvetica", Arial, sans-serif;
+            display: inline-block;
+            width: 265px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+            background-color: #2E353C;
+            text-align: center;
+            color: #fff;
+            font-weight: 100;
+            transition: background 1000ms ease-out;
+        }
+
+        .user dl,
+        .user dd {
+            margin: 0;
+        }
+
+        .user dt {
+            display: none;
+        }
+
+        .user-data {
+            background: #fff url('src/assets/github.png') no-repeat 5px 5px;
+            background-size: 25px;
+            height: 85px;
+            border: 1px solid #D5D5D5;
+            border-bottom:0;
+        }
+
+        dd.user-avatar {
+            display: inline-block;
+            margin: 20px 0 10px;
+        }
+
+        .user-avatar img {
+            border-radius: 100%;
+            height: 120px;
+            width: 120px;
+            border: 3px solid #fff;
+            vertical-align: middle;
+            background-color: #fff;
+        }
+
+        dd.user-name,
+        dd.user-account {
+            margin: 5px 0;
+        }
+
+        .user-name {
+            font-size: 24px;
+        }
+
+        .user-account {
+            font-size: 16px;
+            color: #999;
+            margin: 5px 0;
+        }
+
+        .user-stats {
+            border-top: 1px groove #999;
+            position: relative;
+            top: 155px;
+        }
+
+        .user-stats dd {
+            padding: 10px 20px;
+        }
+
+        .user-repos,
+        .user-following,
+        .user-followers {
+            display: inline-block;
+            font-size: 22px;
+            color: #999;
+        }
+
+        .user-repos:after,
+        .user-following:after,
+        .user-followers:after {
+            content: attr(data-stats);
+            text-transform: uppercase;
+            display: block;
+            font-size: 11px;
+            color: #666;
+            font-weight: normal;
+            line-height: 1.7em;
+        }
+
+        .spinner {
+            background: url('src/assets/spinner.gif') no-repeat center center;
+        }
+
+        a.user-github-url,
+        a.user-repos-url,
+        a.user-followers-url {
+            text-decoration: none;
+        }
+    </style>
+    <article class="user spinner">
+        <dl class="user-data" hidden="">
+            <dt>Avatar:</dt>
+            <dd class="user-avatar">
+                <img src="">
+            </dd>
+            <dt>Fullname:</dt>
+            <dd class="user-name"></dd>
+            <dt>Account:</dt>
+            <a class="user-github-url"><dd class="user-account"></dd></a>
+        </dl>
+        <dl class="user-stats" hidden="">
+            <dt>Repos</dt>
+            <a class="user-repos-url"><dd class="user-repos" data-stats="repos"></dd></a>
+            <dt>Followers</dt>
+            <a class="user-followers-url"><dd class="user-followers" data-stats="followers"></dd></a>
+        </dl>
+    </article>
+</template>
+<style>
+
+    .history-tl-container{
+        font-family: "Roboto",sans-serif;
+        margin:auto;
+        display:block;
+        position:relative;
+    }
+    .history-tl-container ul.tl{
+        margin:20px 0;
+        padding:0;
+        display:inline-block;
+
+    }
+    .history-tl-container ul.tl li{
+        list-style: none;
+        margin:auto;
+        margin-left:200px;
+        min-height:50px;
+        /*background: rgba(255,255,0,0.1);*/
+        border-left:1px dashed #86D6FF;
+        padding:0 0 50px 30px;
+        position:relative;
+    }
+    .history-tl-container ul.tl li:last-child{ border-left:0;}
+    .history-tl-container ul.tl li::before{
+        position: absolute;
+        left: -18px;
+        top: -5px;
+        content: " ";
+        border: 8px solid rgba(255, 255, 255, 0.74);
+        border-radius: 500%;
+        background: #258CC7;
+        height: 20px;
+        width: 20px;
+        transition: all 500ms ease-in-out;
+
+    }
+    .history-tl-container ul.tl li:hover::before{
+        border-color:  #258CC7;
+        transition: all 1000ms ease-in-out;
+    }
+    ul.tl li .item-title{
+    }
+    ul.tl li .item-detail{
+        color:rgba(0,0,0,0.5);
+        font-size:12px;
+    }
+    ul.tl li .timestamp{
+        color: #8D8D8D;
+        position: absolute;
+        width:100px;
+        left: -50%;
+        text-align: right;
+        font-size: 12px;
+    }
+</style>
+
+<script src="/portfolio/foundation/js/foundation.min.js"></script>
+<script src="/portfolio/foundation/js/foundation/foundation.js"></script>
+<script src="/portfolio/foundation/js/foundation/foundation.dropdown.js"></script>
+<script src="/portfolio/foundation/js/foundation/foundation.topbar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+<script src="/portfolio/js/github.js"></script>
+
+</body>
+</html>

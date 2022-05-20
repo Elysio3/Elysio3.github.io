@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link
+      rel="stylesheet"
+      href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"
+    />
+  </head>
+  <body>
+    <div class="column row">
+      <ul class="tabs" data-tabs id="example-tabs">
+        <li class="tabs-title is-active">
+          <a href="#panel1" aria-selected="true">afficher test 1</a>
+        </li>
+        <li class="tabs-title">
+          <a href="#panel2">afficher test 2</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-panel is-active" id="panel1">test 1</div>
+      <div class="tabs-panel" id="panel2">test 2</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

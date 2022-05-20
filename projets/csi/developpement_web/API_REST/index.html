@@ -1,0 +1,317 @@
+<html lang="en">
+<head>
+    <title>Maël KERVICHE Portfolio - Accueil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+
+    <link href='/portfolio/foundation/foundation.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/portfolio/foundation/foundation.css">
+    <link rel="stylesheet" href="/portfolio/foundation/foundation.min.js">
+    <link rel="stylesheet" href="/portfolio/foundation/foundation.min.css">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.js">
+
+    <script type='text/javascript' src='/portfolio/js/jquery.particleground.js'></script>
+    <script type='text/javascript' src='/portfolio/js/demo.js'></script>
+    <script type='text/javascript' src='/portfolio/js/jquery-1.11.1.min.js'></script>
+
+    <link rel="stylesheet" href="/portfolio/css/styles.css">
+    <link rel="stylesheet" href="/portfolio/css/normalize.css">
+
+</head>
+<body>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['HTML', 5],
+            ['CSS', 5],
+            ['Bootstrap', 5],
+            ['Javascript', 3],
+            ['PHP', 2],
+
+        ]);
+
+        var options = {
+            backgroundColor: 'rgb(0, 49, 64)',
+            legend: {textStyle: {color: 'white'}},
+            title: 'Langages utilisés',
+            pieHole: 0.4,
+        };
+
+
+
+
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+    }
+</script>
+
+<!--<div id="piechart" style="width: 500px; height: 300px;"></div>-->
+
+
+
+<!-- Start of top bar -->
+<div class="top-bar" style="position: fixed; width: 100%">
+    <div class="top-bar-left text-left">
+        <img style="height:75px; width: auto" src="/portfolio/images/profile.jpg">
+    </div>
+
+    <div class="top-bar-title">
+        <ul class="menu-text">
+            Maël KERVICHE - Portfolio
+        </ul>
+    </div>
+
+    <style> a { color: black; }</style>
+
+    <div class="top-bar-right text-left" >
+        <ul class="dropdown menu button-group" data-dropdown-menu style="padding-right: 75px">
+            <li class=" active"><a href="/portfolio/index.html">Accueil</a></li>
+
+            <li><a href="/portfolio/cv.html">Mon Parcours</a></li>
+
+            <li>
+                <a href="/portfolio/projets/index.html" onclick="location.href='/portfolio/projets/index.html';">Mes Projets</a>
+                <ul class="menu">
+                    <li><a href="/portfolio/projets/index.html#bts" onclick="location.href='/portfolio/projets/index.html#bts';">BTS SIO</a></li>
+                    <li><a href="/portfolio/projets/index.html#csi" onclick="location.href='/portfolio/projets/index.html#csi';">Bachelor CSI</a></li>
+                    <li><a href="/portfolio/projets/index.html#alternance" onclick="location.href='/portfolio/projets/index.html#alternance';">Alternance(s)</a></li>
+                    <li><a href="/portfolio/projets/index.html#stage" onclick="location.href='/portfolio/projets/index.html#stage';">Stage(s)</a></li>
+
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="//portfolio/veille/index.html" onclick="location.href='/portfolio/veille/index.html';">Veille technologique</a>
+                <ul class="menu">
+                    <li><a href="/portfolio/veille/php.html#bts">(BTS) PHP)</a></li>
+                    <li><a href="/portfolio/veille/php.html#csi">(CSI) PHP</a></li>
+                    <li><a href="/portfolio/veille/sgbd.html">(CSI) SGBD</a></li>
+                    <li><a href="/portfolio/veille/apache.html">(CSI) Apache</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/portfolio/contact.html">Contact</a></li>
+
+        </ul>
+
+
+
+    </div>
+</div>
+<!-- End of top bar -->
+
+
+<div class="row" id="particles">
+    <div class="text-center" id="intro">
+        <h1>Maël KERVICHE</h1>
+
+    </div>
+</div>
+
+
+
+<div class="row" id="content">
+    <div class="grid-container">
+
+        <div class="grid-x">
+            <div class="medium-12 columns">
+                <div class="medium-12 column text-left">
+                    <h3 id="test">Bienvenue sur mon Portfolio</h3>
+                    <p>
+                        Développeur-étudiant, je suis en formation Concepteur de Systèmes d'Informations à l'ORT de Toulouse - Colomiers. Alternant en parrallèle chez JLogiciels un éditeur de logiciel en SaaS situé sur Colomiers,
+                        je suis en plein apprentissage du métier de développeur. Mon portfolio relate l'ensemble des projets auxquels j'ai pu participer. Du cahier des charges en passant
+                        par la gestion de projet, au développement et jusqu'à la mise en production et le déploiement, les veilles technologiques étudiées, l'ensembles de ces informations sont à votre disposition ici, sur mon portfolio.
+                    </p>
+                    <hr>
+
+
+                </div>
+                <div class="row">
+                    <div class="medium-6 text-right column">
+                        <output id="cards"><github-card user="Elysio3"></github-card></output>
+                    </div>
+                    <div class=" medium-6 text-left column">
+                        <div class="badge-base LI-profile-badge text-right" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="maël-kerviche-57ab76202" data-version="v1">
+                            <a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/ma%C3%ABl-kerviche-57ab76202?trk=profile-badge" target="_blank"><br><br></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+
+<footer>
+    <div class="medium-text-right" style="padding-right: 15px">
+        <p>
+            Copyright © <script>document.write(new Date().getFullYear());</script> All rights reserved | Website by Maël KERVICHE</a>
+        </p>
+    </div>
+</footer>
+
+<template id="github-template">
+    <style>
+        :host {
+            display: inline-block;
+        }
+
+        .user {
+            font-family: "Helvetica", Arial, sans-serif;
+            display: inline-block;
+            width: 265px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+            background-color: #2E353C;
+            text-align: center;
+            color: #fff;
+            font-weight: 100;
+            transition: background 1000ms ease-out;
+        }
+
+        .user dl,
+        .user dd {
+            margin: 0;
+        }
+
+        .user dt {
+            display: none;
+        }
+
+        .user-data {
+            background: #fff url('src/assets/github.png') no-repeat 5px 5px;
+            background-size: 25px;
+            height: 85px;
+            border: 1px solid #D5D5D5;
+            border-bottom:0;
+        }
+
+        dd.user-avatar {
+            display: inline-block;
+            margin: 20px 0 10px;
+        }
+
+        .user-avatar img {
+            border-radius: 100%;
+            height: 120px;
+            width: 120px;
+            border: 3px solid #fff;
+            vertical-align: middle;
+            background-color: #fff;
+        }
+
+        dd.user-name,
+        dd.user-account {
+            margin: 5px 0;
+        }
+
+        .user-name {
+            font-size: 24px;
+        }
+
+        .user-account {
+            font-size: 16px;
+            color: #999;
+            margin: 5px 0;
+        }
+
+        .user-stats {
+            border-top: 1px groove #999;
+            position: relative;
+            top: 155px;
+        }
+
+        .user-stats dd {
+            padding: 10px 20px;
+        }
+
+        .user-repos,
+        .user-following,
+        .user-followers {
+            display: inline-block;
+            font-size: 22px;
+            color: #999;
+        }
+
+        .user-repos:after,
+        .user-following:after,
+        .user-followers:after {
+            content: attr(data-stats);
+            text-transform: uppercase;
+            display: block;
+            font-size: 11px;
+            color: #666;
+            font-weight: normal;
+            line-height: 1.7em;
+        }
+
+        .spinner {
+            background: url('src/assets/spinner.gif') no-repeat center center;
+        }
+
+        a.user-github-url,
+        a.user-repos-url,
+        a.user-followers-url {
+            text-decoration: none;
+        }
+    </style>
+    <article class="user spinner">
+        <dl class="user-data" hidden="">
+            <dt>Avatar:</dt>
+            <dd class="user-avatar">
+                <img src="">
+            </dd>
+            <dt>Fullname:</dt>
+            <dd class="user-name"></dd>
+            <dt>Account:</dt>
+            <a class="user-github-url"><dd class="user-account"></dd></a>
+        </dl>
+        <dl class="user-stats" hidden="">
+            <dt>Repos</dt>
+            <a class="user-repos-url"><dd class="user-repos" data-stats="repos"></dd></a>
+            <dt>Followers</dt>
+            <a class="user-followers-url"><dd class="user-followers" data-stats="followers"></dd></a>
+        </dl>
+    </article>
+</template>
+
+<script src="/portfolio/foundation/js/foundation.min.js"></script>
+<script src="/portfolio/foundation/js/foundation/foundation.js"></script>
+<script src="/portfolio/foundation/js/foundation/foundation.dropdown.js"></script>
+<script src="/portfolio/foundation/js/foundation/foundation.topbar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+<script src="/portfolio/js/github.js"></script>
+
+</body>
+</html>
