@@ -21,17 +21,21 @@
     <script type='text/javascript' src='/js/demo.js'></script>
     <script type='text/javascript' src='/js/jquery-1.11.1.min.js'></script>
 
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+
 </head>
 <body>
 
 
+<!--<div id="piechart" style="width: 500px; height: 300px;"></div>-->
 
 
 
 <!-- Start of top bar -->
-<div class="top-bar">
-    <div class="top-bar-left">
-        <img style="height:75px; width: auto" src="/images/logo.png">
+<div class="top-bar" style="position: fixed; width: 100%">
+    <div class="top-bar-left text-left">
+        <img style="height:75px; width: auto" src="/images/profile.jpg">
     </div>
 
     <div class="top-bar-title">
@@ -42,44 +46,26 @@
 
     <style> a { color: black; }</style>
 
-    <div class="top-bar-right" >
+    <div class="top-bar-right text-left" >
         <ul class="dropdown menu button-group" data-dropdown-menu style="padding-right: 75px">
-            <li class=" active"><a href="/index.html">Accueil</a></li>
+            <li><a href="/index.html">Accueil</a></li>
 
             <li><a href="/cv.html">Mon Parcours</a></li>
 
             <li>
                 <a href="/projets/index.html" onclick="location.href='/projets/index.html';">Mes Projets</a>
                 <ul class="menu">
-                    <li>
-                        <a href="/projets/sio1/index.html" onclick="location.href='/projets/sio1/index.html';">BTS SIO 1ere année</a>
-                        <ul class="menu">
-                            <li><a href="/projets/sio1/projet%201/index.html" onclick="location.href='/projets/sio1/projet%201/index.html';">Projet 1</a></li>
-                            <li><a href="/projets/sio1/projet%202/index.html" onclick="location.href='/projets/sio1/projet%202/index.html';">Projet 2</a></li>
-                            <li><a href="/projets/sio1/projet%203/index.html" onclick="location.href='/projets/sio1/projet%203/index.html';">Projet 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/projets/sio2/index.html" onclick="location.href='/projets/sio2/index.html';">BTS SIO 2nde année</a>
-                        <ul class="menu">
-                            <li><a href="/projets/sio2/projet%204/index.html" onclick="location.href='/projets/sio2/projet%204/index.html';">Projet 4</a></li>
-                            <li><a href="/projets/sio2/projet%205/index.html" onclick="location.href='/projets/sio2/projet%205/index.html';">Projet 5</a></li>
-                            <li><a href="/projets/sio2/projet%206/index.html" onclick="location.href='/projets/sio2/projet%206/index.html';">Projet 6</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="/projets/csi/index.html" onclick="location.href='/projets/csi/index.html';">Bachelor CSI</a>
-                        <ul class="menu">
-                            <li><a href="/projets/csi/wds/index.html" onclick="location.href='/projets/csi/wds/index.html';">WebDevServices</a></li>
-                            <li><a href="/projets/csi/gestion_du_si/index.html" onclick="location.href='/projets/csi/gestion_du_si/index.html';">Gestion du SI</a></li>
-                            <li><a href="/projets/csi/developpement_web/index.html" onclick="location.href='/projets/csi/developpement_web/index.html';">Développement Web</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="/projets/index.html#bts" onclick="location.href='/projets/index.html#bts';">BTS SIO</a></li>
+                    <li><a href="/projets/index.html#csi" onclick="location.href='/projets/index.html#csi';">Bachelor CSI</a></li>
+                    <li><a href="/projets/index.html#alternance" onclick="location.href='/projets/index.html#alternance';">Alternance(s)</a></li>
+                    <li><a href="/projets/index.html#stage" onclick="location.href='/projets/index.html#stage';">Stage(s)</a></li>
+
+
                 </ul>
             </li>
 
             <li>
-                <a href="/veille/index.html" onclick="location.href='/veille/index.html';">Veille technologique</a>
+                <a class="active" href="/veille/index.html" onclick="location.href='/veille/index.html';">Veille technologique</a>
                 <ul class="menu">
                     <li><a href="/veille/php.html#bts">(BTS) PHP)</a></li>
                     <li><a href="/veille/php.html#csi">(CSI) PHP</a></li>
@@ -100,8 +86,8 @@
 
 
 <div class="row" id="particles">
-    <div id="intro">
-        <h1>Maël KERVICHE</h1>
+    <div class="text-center" id="intro">
+        <h1>Veille technologique</h1>
 
     </div>
 </div>
@@ -112,21 +98,39 @@
     <div class="grid-container">
 
         <div class="grid-x">
-            <div class="medium-10 columns">
-                <div class="">
-                    <h3 id="test">Bienvenue sur mon PortFolio</h3>
+            <div class="medium-12 columns">
+                <div class="medium-12 column text-left">
+                    <h3 id="test">Bienvenue sur mon Portfolio</h3>
                     <p>
-                        Développeur-étudiant, je suis en formation Concepteur de Systèmes d'Informations à l'ORT de Toulouse - Colomiers. Alternant en parrallèle chez JLogiciels un éditeur de logiciel en SaaS situé sur Colomiers,
-                        je suis en plein apprentissage du métier de développeur. Mon portfolio relate l'ensemble des projets auxquels j'ai pu participer. Du cahier des charges en passant
-                        par la gestion de projet, au développement et jusqu'à la mise en production et le déploiement, les veilles technologiques étudiées, l'ensembles de ces informations sont à votre disposition ici, sur mon portfolio.</p>
-                    <p>
-                        Vous trouverez par ailleurs mon parcours scholaire et professionnel détaillé, ainsi que mon CV disponible en consultation en ligne ou en téléchargement.
-                    <hr>Pour finir, les différents moyens de me contacter sont à votre disposition en pied de page ou sur la page prévue à cet effet.
+                        Dans le cadre de mon alternance en Bachelor CSI : Conceptuer de systèmes d'informations, une veille technologique est tenue afin de nous permettre d'être actif
+                        et à l'affut des nouvelles technologies, de l'actualité de notre domaine d'études.
+                        <br>Une veille technologique consiste à se tenir informé des actualités d'un ou plusieurs sujets et domaines. Afin de permettre une large étendue de recherches, trois thèmes ou sujets
+                        ont étés choisi par mes soin selon mes affinités sur lesquels je m'engage à établir une véritable veille technologique. :
+                        <ul>
+                            <li>Le langage PHP</li>
+                            <li>Les systèmes de gestion de base de données (SGBD)</li>
+                            <li>L'outil Apache</li>
+                        </ul>
+
+                        Vous trouverez donc sur les différentes page des ces sujets divers articles français, ou traduits relatant des dernères informations les concernant.
                     </p>
-                    <!-- LINKEDIN -->
-                    <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="maël-kerviche-57ab76202" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/ma%C3%ABl-kerviche-57ab76202?trk=profile-badge" target="_blank">Maël KERVICHE</a></div>
+                    <hr>
+
 
                 </div>
+                <div class="row">
+                    <div class="medium-6 text-right column">
+                        <output id="cards"><github-card user="Elysio3"></github-card></output>
+                    </div>
+                    <div class=" medium-6 text-left column">
+                        <div class="badge-base LI-profile-badge text-right" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="maël-kerviche-57ab76202" data-version="v1">
+                            <a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/ma%C3%ABl-kerviche-57ab76202?trk=profile-badge" target="_blank"><br><br></a>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -142,6 +146,133 @@
     </div>
 </footer>
 
+<template id="github-template">
+    <style>
+        :host {
+            display: inline-block;
+        }
+
+        .user {
+            font-family: "Helvetica", Arial, sans-serif;
+            display: inline-block;
+            width: 265px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+            background-color: #2E353C;
+            text-align: center;
+            color: #fff;
+            font-weight: 100;
+            transition: background 1000ms ease-out;
+        }
+
+        .user dl,
+        .user dd {
+            margin: 0;
+        }
+
+        .user dt {
+            display: none;
+        }
+
+        .user-data {
+            background: #fff url('src/assets/github.png') no-repeat 5px 5px;
+            background-size: 25px;
+            height: 85px;
+            border: 1px solid #D5D5D5;
+            border-bottom:0;
+        }
+
+        dd.user-avatar {
+            display: inline-block;
+            margin: 20px 0 10px;
+        }
+
+        .user-avatar img {
+            border-radius: 100%;
+            height: 120px;
+            width: 120px;
+            border: 3px solid #fff;
+            vertical-align: middle;
+            background-color: #fff;
+        }
+
+        dd.user-name,
+        dd.user-account {
+            margin: 5px 0;
+        }
+
+        .user-name {
+            font-size: 24px;
+        }
+
+        .user-account {
+            font-size: 16px;
+            color: #999;
+            margin: 5px 0;
+        }
+
+        .user-stats {
+            border-top: 1px groove #999;
+            position: relative;
+            top: 155px;
+        }
+
+        .user-stats dd {
+            padding: 10px 20px;
+        }
+
+        .user-repos,
+        .user-following,
+        .user-followers {
+            display: inline-block;
+            font-size: 22px;
+            color: #999;
+        }
+
+        .user-repos:after,
+        .user-following:after,
+        .user-followers:after {
+            content: attr(data-stats);
+            text-transform: uppercase;
+            display: block;
+            font-size: 11px;
+            color: #666;
+            font-weight: normal;
+            line-height: 1.7em;
+        }
+
+        .spinner {
+            background: url('src/assets/spinner.gif') no-repeat center center;
+        }
+
+        a.user-github-url,
+        a.user-repos-url,
+        a.user-followers-url {
+            text-decoration: none;
+        }
+    </style>
+    <article class="user spinner">
+        <dl class="user-data" hidden="">
+            <dt>Avatar:</dt>
+            <dd class="user-avatar">
+                <img src="">
+            </dd>
+            <dt>Fullname:</dt>
+            <dd class="user-name"></dd>
+            <dt>Account:</dt>
+            <a class="user-github-url"><dd class="user-account"></dd></a>
+        </dl>
+        <dl class="user-stats" hidden="">
+            <dt>Repos</dt>
+            <a class="user-repos-url"><dd class="user-repos" data-stats="repos"></dd></a>
+            <dt>Followers</dt>
+            <a class="user-followers-url"><dd class="user-followers" data-stats="followers"></dd></a>
+        </dl>
+    </article>
+</template>
+
 <script src="/foundation/js/foundation.min.js"></script>
 <script src="/foundation/js/foundation/foundation.js"></script>
 <script src="/foundation/js/foundation/foundation.dropdown.js"></script>
@@ -155,6 +286,7 @@
     $(document).foundation();
 </script>
 
+<script src="/js/github.js"></script>
 
 </body>
 </html>
