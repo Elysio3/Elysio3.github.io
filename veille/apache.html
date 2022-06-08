@@ -9,29 +9,33 @@
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
 
-    <link href='foundation/foundation.min.css' rel='stylesheet'>
+    <link href='/foundation/foundation.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="foundation/foundation.css">
-    <link rel="stylesheet" href="foundation/foundation.min.js">
-    <link rel="stylesheet" href="foundation/foundation.min.css">
+    <link rel="stylesheet" href="/foundation/foundation.css">
+    <link rel="stylesheet" href="/foundation/foundation.min.js">
+    <link rel="stylesheet" href="/foundation/foundation.min.css">
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.js">
 
-    <script type='text/javascript' src='js/jquery.particleground.js'></script>
-    <script type='text/javascript' src='js/demo.js'></script>
-    <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script>
+    <script type='text/javascript' src='/js/jquery.particleground.js'></script>
+    <script type='text/javascript' src='/js/demo.js'></script>
+    <script type='text/javascript' src='/js/jquery-1.11.1.min.js'></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
 
 </head>
 <body>
 
 
+<!--<div id="piechart" style="width: 500px; height: 300px;"></div>-->
 
 
 
 <!-- Start of top bar -->
-<div class="top-bar">
-    <div class="top-bar-left">
-        <img style="height:75px; width: auto" src="images/logo.png">
+<div class="top-bar" style="position: fixed; width: 100%">
+    <div class="top-bar-left text-left">
+        <img style="height:75px; width: auto" src="/images/profile.jpg">
     </div>
 
     <div class="top-bar-title">
@@ -42,53 +46,35 @@
 
     <style> a { color: black; }</style>
 
-    <div class="top-bar-right" >
+    <div class="top-bar-right text-left" >
         <ul class="dropdown menu button-group" data-dropdown-menu style="padding-right: 75px">
-            <li class=" active"><a href="./index.html">Accueil</a></li>
+            <li><a href="/index.html">Accueil</a></li>
 
-            <li><a href="cv.html">Mon Parcours</a></li>
+            <li><a href="/cv.html">Mon Parcours</a></li>
 
             <li>
-                <a href="./projets/index.html" onclick="location.href='projets/index.html';">Mes Projets</a>
+                <a href="/projets/index.html" onclick="location.href='/projets/index.html';">Mes Projets</a>
                 <ul class="menu">
-                    <li>
-                        <a href="projets/sio1/index.html" onclick="location.href='projets/sio1/index.html';">BTS SIO 1ere année</a>
-                        <ul class="menu">
-                            <li><a href="projets/sio1/projet%201/index.html" onclick="location.href='projets/sio1/projet%201/index.html';">Projet 1</a></li>
-                            <li><a href="projets/sio1/projet%202/index.html" onclick="location.href='projets/sio1/projet%202/index.html';">Projet 2</a></li>
-                            <li><a href="projets/sio1/projet%203/index.html" onclick="location.href='projets/sio1/projet%203/index.html';">Projet 3</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="projets/sio2/index.html" onclick="location.href='projets/sio2/index.html';">BTS SIO 2nde année</a>
-                        <ul class="menu">
-                            <li><a href="projets/sio2/projet%204/index.html" onclick="location.href='projets/sio2/projet%204/index.html';">Projet 4</a></li>
-                            <li><a href="projets/sio2/projet%205/index.html" onclick="location.href='projets/sio2/projet%205/index.html';">Projet 5</a></li>
-                            <li><a href="projets/sio2/projet%206/index.html" onclick="location.href='projets/sio2/projet%206/index.html';">Projet 6</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="projets/csi/index.html" onclick="location.href='projets/csi/index.html';">Bachelor CSI</a>
-                        <ul class="menu">
-                            <li><a href="projets/csi/wds/index.html" onclick="location.href='projets/csi/wds/index.html';">WebDevServices</a></li>
-                            <li><a href="projets/csi/gestion_du_si/index.html" onclick="location.href='projets/csi/gestion_du_si/index.html';">Gestion du SI</a></li>
-                            <li><a href="projets/csi/developpement_web/index.html" onclick="location.href='projets/csi/developpement_web/index.html';">Développement Web</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="/projets/index.html#bts" onclick="location.href='/projets/index.html#bts';">BTS SIO</a></li>
+                    <li><a href="/projets/index.html#csi" onclick="location.href='/projets/index.html#csi';">Bachelor CSI</a></li>
+                    <li><a href="/projets/index.html#alternance" onclick="location.href='/projets/index.html#alternance';">Alternance(s)</a></li>
+                    <li><a href="/projets/index.html#stage" onclick="location.href='/projets/index.html#stage';">Stage(s)</a></li>
+
+
                 </ul>
             </li>
 
             <li>
-                <a href="veille/index.html" onclick="location.href='veille/index.html';">Veille technologique</a>
+                <a class="active" href="/veille/index.html" onclick="location.href='/veille/index.html';">Veille technologique</a>
                 <ul class="menu">
-                    <li><a href="veille/php.html">(BTS) PHP)</a></li>
-                    <li><a href="veille/php2">(CSI) PHP</a></li>
-                    <li><a href="veille/sgbd.html">(CSI) SGBD</a></li>
-                    <li><a href="veille/apache.html">(CSI) Apache</a></li>
+                    <li><a href="/veille/php.html#bts">(BTS) PHP)</a></li>
+                    <li><a href="/veille/php.html#csi">(CSI) PHP</a></li>
+                    <li><a href="/veille/sgbd.html">(CSI) SGBD</a></li>
+                    <li><a href="/veille/apache.html">(CSI) Apache</a></li>
                 </ul>
             </li>
 
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="/contact.html">Contact</a></li>
 
         </ul>
 
@@ -100,8 +86,9 @@
 
 
 <div class="row" id="particles">
-    <div id="intro">
-        <h1>Maël KERVICHE</h1>
+    <div class="text-center" id="intro">
+        <h1>Veille technologique : Apache (serveurs)</h1>
+        <h5>Du plus récent au plus ancien</h5>
 
     </div>
 </div>
@@ -112,21 +99,91 @@
     <div class="grid-container">
 
         <div class="grid-x">
-            <div class="medium-10 columns">
-                <div class="">
-                    <h3 id="test">Bienvenue sur mon PortFolio</h3>
+            <div class="medium-12 columns">
+
+
+                <div class="medium-12 column text-left">
                     <p>
-                        Développeur-étudiant, je suis en formation Concepteur de Systèmes d'Informations à l'ORT de Toulouse - Colomiers. Alternant en parrallèle chez JLogiciels un éditeur de logiciel en SaaS situé sur Colomiers,
-                        je suis en plein apprentissage du métier de développeur. Mon portfolio relate l'ensemble des projets auxquels j'ai pu participer. Du cahier des charges en passant
-                        par la gestion de projet, au développement et jusqu'à la mise en production et le déploiement, les veilles technologiques étudiées, l'ensembles de ces informations sont à votre disposition ici, sur mon portfolio.</p>
-                    <p>
-                        Vous trouverez par ailleurs mon parcours scholaire et professionnel détaillé, ainsi que mon CV disponible en consultation en ligne ou en téléchargement.
-                        <hr>Pour finir, les différents moyens de me contacter sont à votre disposition en pied de page ou sur la page prévue à cet effet.
+                        <a class="button" href="https://httpd.apache.org/security/vulnerabilities_24.html" target="_blank">Voir l'article</a>
+                    <h5>Résumé :</h5>
+                    <h3>Nouvelles vulnérabilités résolues Apache HTTP Serveur 2.4</h3>
+                    <i>02 Mars 2022</i><br>
+                    Résolution d'un grand nombre de vulnérabilités de sécurité sur le serveur HTTP 2.4 d'Apache.
                     </p>
-                    <!-- LINKEDIN -->
-                    <div class="badge-base LI-profile-badge" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="maël-kerviche-57ab76202" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/ma%C3%ABl-kerviche-57ab76202?trk=profile-badge" target="_blank">Maël KERVICHE</a></div>
+                    <hr>
+                </div>
+
+                <div class="medium-12 column text-left">
+                    <p>
+                        <a class="button" href="https://thehackernews.com/2022/05/enemybot-linux-botnet-now-exploits-web.html" target="_blank">Voir l'article</a>
+                    <h5>Résumé :</h5>
+                    <h3>Vulnérabilité : un botnet exploite les serveurs web</h3>
+                    <i>12 Mai 2022</i><br>
+                    Un botnet basé sur Linux exploite maintenant les vulnérabilités des serveurs web, d'android et de CMS et capable d'organiser un grand nombre d'attaques.
+                    </p>
+                    <hr>
+                </div>
+
+                <div class="medium-12 column text-left">
+                    <p>
+                        <a class="button" href="https://blogs.apache.org/conferences/entry/call-for-presentations-for-apachecon2" target="_blank">Voir l'article</a>
+                    <h5>Résumé :</h5>
+                    <h3>Conférence Apache, BarCamps et MeetUps</h3>
+                    <i>20 Mai 2022</i><br>
+                    La conférence ApacheCon Asie auras lieu cette année en ligne du 29 au 31 juillet 2022. Présentant les différents projets à venir de l'entreprise,
+                    mais aussi des discussions et formations sur apache, son fonctionnement, l'open source, la légalité et beaucoup d'autre sujet en liens.
+                    </p>
+                    <hr>
+                </div>
+                <div class="medium-12 column text-left">
+                    <p>
+                        <a class="button" href="https://blogs.apache.org/cloudstack/entry/what-s-new-in-apache1" target="_blank">Voir l'article</a>
+                    <h5>Résumé :</h5>
+                    <h3>Apache CloudStack Blog</h3>
+                    <i>07 Juin 2022</i><br>
+                    Nouvelle version de la plateforme de gestion cloud Apache cloudstack 4.17 avec de nouvelles fonctionnalités.
+                    </p>
+                    <hr>
+                </div>
+
+                <div class="medium-12 column text-left">
+                    <p>
+                        <a class="button" href="" target="_blank">Voir l'article</a>
+                    <h5>Résumé :</h5>
+                    <h3>Dutch PHP : conférence Dutch PHP</h3>
+                    <i>25 Avril 2022</i><br>
+                    Conférence en ligne de communication, d'apprentissage regrouppant plus de 55 nationalités et pays participants, le tout sur le sujet du PHP et des technologies liées au web.
+                    </p>
+                    <hr>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="row">
+                    <div class="medium-6 text-right column">
+                        <output id="cards"><github-card user="Elysio3"></github-card></output>
+                    </div>
+                    <div class=" medium-6 text-left column">
+                        <div class="badge-base LI-profile-badge text-right" data-locale="fr_FR" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="maël-kerviche-57ab76202" data-version="v1">
+                            <a class="badge-base__link LI-simple-link" href="https://fr.linkedin.com/in/ma%C3%ABl-kerviche-57ab76202?trk=profile-badge" target="_blank"><br><br></a>
+                        </div>
+                    </div>
 
                 </div>
+
+
             </div>
         </div>
     </div>
@@ -142,10 +199,137 @@
     </div>
 </footer>
 
-<script src="foundation/js/foundation.min.js"></script>
-<script src="foundation/js/foundation/foundation.js"></script>
-<script src="foundation/js/foundation/foundation.dropdown.js"></script>
-<script src="foundation/js/foundation/foundation.topbar.js"></script>
+<template id="github-template">
+    <style>
+        :host {
+            display: inline-block;
+        }
+
+        .user {
+            font-family: "Helvetica", Arial, sans-serif;
+            display: inline-block;
+            width: 265px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+            background-color: #2E353C;
+            text-align: center;
+            color: #fff;
+            font-weight: 100;
+            transition: background 1000ms ease-out;
+        }
+
+        .user dl,
+        .user dd {
+            margin: 0;
+        }
+
+        .user dt {
+            display: none;
+        }
+
+        .user-data {
+            background: #fff url('src/assets/github.png') no-repeat 5px 5px;
+            background-size: 25px;
+            height: 85px;
+            border: 1px solid #D5D5D5;
+            border-bottom:0;
+        }
+
+        dd.user-avatar {
+            display: inline-block;
+            margin: 20px 0 10px;
+        }
+
+        .user-avatar img {
+            border-radius: 100%;
+            height: 120px;
+            width: 120px;
+            border: 3px solid #fff;
+            vertical-align: middle;
+            background-color: #fff;
+        }
+
+        dd.user-name,
+        dd.user-account {
+            margin: 5px 0;
+        }
+
+        .user-name {
+            font-size: 24px;
+        }
+
+        .user-account {
+            font-size: 16px;
+            color: #999;
+            margin: 5px 0;
+        }
+
+        .user-stats {
+            border-top: 1px groove #999;
+            position: relative;
+            top: 155px;
+        }
+
+        .user-stats dd {
+            padding: 10px 20px;
+        }
+
+        .user-repos,
+        .user-following,
+        .user-followers {
+            display: inline-block;
+            font-size: 22px;
+            color: #999;
+        }
+
+        .user-repos:after,
+        .user-following:after,
+        .user-followers:after {
+            content: attr(data-stats);
+            text-transform: uppercase;
+            display: block;
+            font-size: 11px;
+            color: #666;
+            font-weight: normal;
+            line-height: 1.7em;
+        }
+
+        .spinner {
+            background: url('src/assets/spinner.gif') no-repeat center center;
+        }
+
+        a.user-github-url,
+        a.user-repos-url,
+        a.user-followers-url {
+            text-decoration: none;
+        }
+    </style>
+    <article class="user spinner">
+        <dl class="user-data" hidden="">
+            <dt>Avatar:</dt>
+            <dd class="user-avatar">
+                <img src="">
+            </dd>
+            <dt>Fullname:</dt>
+            <dd class="user-name"></dd>
+            <dt>Account:</dt>
+            <a class="user-github-url"><dd class="user-account"></dd></a>
+        </dl>
+        <dl class="user-stats" hidden="">
+            <dt>Repos</dt>
+            <a class="user-repos-url"><dd class="user-repos" data-stats="repos"></dd></a>
+            <dt>Followers</dt>
+            <a class="user-followers-url"><dd class="user-followers" data-stats="followers"></dd></a>
+        </dl>
+    </article>
+</template>
+
+<script src="/foundation/js/foundation.min.js"></script>
+<script src="/foundation/js/foundation/foundation.js"></script>
+<script src="/foundation/js/foundation/foundation.dropdown.js"></script>
+<script src="/foundation/js/foundation/foundation.topbar.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
@@ -155,6 +339,7 @@
     $(document).foundation();
 </script>
 
+<script src="/js/github.js"></script>
 
 </body>
 </html>
